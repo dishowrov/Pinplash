@@ -1,0 +1,112 @@
+.login-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+
+    .login-area {
+        max-width: 375px;
+        width: 100%;
+        margin: auto;
+        padding: 1rem;
+
+        h1.login-page-title {
+            text-align: center;
+            margin: 0 0 2.5rem 0;
+            font-weight: 500;
+            line-height: 48px;
+            font-size: 30px;
+        }
+
+        form.login-form {
+            .form-input {
+                padding-bottom: 25px;
+                display: grid;
+
+                input, select {
+                    font-size: 1.125rem;
+                    line-height: 1.75rem;
+                    padding: .5rem .75rem;
+                    border: 1px solid rgb(40 187 250);
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                }
+            }
+
+            input.login-btn {
+                width: 100%;
+                color: #FFF;
+                cursor: pointer;
+                padding: .75rem;
+                font-size: .875rem;
+                line-height: 1.25rem;
+                font-weight: 600;
+                background: linear-gradient(91deg, #e64790 0%, #c37606 100%);
+                border: none;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+            }
+        }
+
+        a.forgot-pass-btn {
+            text-decoration: none;
+            color: rgb(251 146 60);
+        }
+
+        p.signup-btn {
+            text-decoration: none;
+            margin: 1.25rem 0 0 0;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            text-align: center;
+
+            a {
+                color: rgb(40 187 250);
+            }
+        }
+
+        p.back-to-home-btn {
+            text-align: center;
+            margin: 1.25rem 0 0 0;
+
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                padding: .5rem 1rem;
+                background: linear-gradient(91deg, #818cf8 0%, #22d3ee 100%);
+                border-radius: .375rem;
+            }
+        }
+    }
+
+    .student-login-img {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.student-login-page {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media (max-width: 767px) {
+    .student-login-page {
+        grid-template-columns: 1fr;
+
+        .student-login-img {
+            display: none;
+        }
+    }
+}
+
