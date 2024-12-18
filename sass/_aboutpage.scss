@@ -1,0 +1,113 @@
+.about {
+    font-family: 'Poppins', sans-serif;
+
+    .about-contents {
+        min-height: 100vh;
+        max-width: 80rem;
+        margin: auto;
+        padding: 65px 1rem;
+
+
+        h1.about-title {
+            font-weight: 500;
+            font-size: 52px;
+            line-height: 60px;
+            margin: 0;
+            text-align: center;
+        }
+
+        p.about-details {
+            margin: 2.5rem 0;
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+
+        .about-cards {
+            display: flex;
+            gap: 3%;
+            align-items: center;
+            justify-content: space-between;
+
+            .about-card {
+                display: flex;
+                gap: 2.5rem;
+                align-items: center;
+                padding: 30px;
+                border-radius: .75rem;
+                background-color: #0EA5E9;
+                text-decoration: none;
+                width: 25%;
+
+                svg {
+                    height: 3.5rem;
+                    width: 3.5rem;
+                }
+
+                span {
+                    color: #fff;
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                }
+            }
+
+            .about-card-1 {
+                background-color: #F97316;
+            }
+
+            .about-card-2 {
+                background-color: #A855F7;
+            }
+
+            .about-card-3 {
+                background-color: #3B82F6;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024.1px) {
+    .about {
+        .about-contents {
+            gap: 1%;
+
+            .about-cards {
+                .about-card {
+                    span {
+                        font-size: 1.1rem;
+                        line-height: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991.1px) {
+    .about {
+        .about-cards {
+            .about-cards {
+                .about-card {
+                    span {
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767.1px) {
+    .about .about-contents .about-cards {
+        flex-direction: column;
+    }
+
+    .about .about-contents .about-cards .about-card {
+        width: 90%;
+    }
+
+    .about .about-cards .about-card-2 {
+        margin: 1.25rem 0;
+    }
+}

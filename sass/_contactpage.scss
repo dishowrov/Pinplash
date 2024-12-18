@@ -1,0 +1,31 @@
+.contact {
+    font-family: 'Poppins', sans-serif;
+
+    .contact-contents {
+        max-width: 80rem;
+        margin: auto;
+        padding: 65px 1rem;
+        min-height: 100vh;
+
+
+        h1.contact-title {
+            font-weight: 500;
+            font-size: 52px;
+            line-height: 60px;
+            margin: 0;
+            text-align: center;
+        }
+
+        p.contact-details {
+            text-align: center;
+            margin: 2.5rem 0;
+            font-size: 1rem;
+            line-height: 1.5rem;
+
+            a {
+                text-decoration: none;
+                color: rgb(40, 187, 250);
+            }
+        }
+    }
+}
