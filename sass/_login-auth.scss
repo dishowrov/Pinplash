@@ -1,0 +1,58 @@
+.login-authentication {
+    background-color: #fff;
+
+    .auth-items {
+        max-width: 700px;
+        width: 100%;
+        margin: auto;
+        padding: 4rem 2rem;
+
+        button.auth-back-btn {
+            padding: 5px;
+            background-color: transparent;
+            border: none;
+            margin-left: 2.5rem;
+            cursor: pointer;
+
+            i {
+                font-size: 19px;
+            }
+        }
+
+        .auth-login-types {
+            display: grid;
+            gap: 1rem;
+            padding-top: 5rem;
+
+            a.auth-login-btn {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                padding: 1rem;
+                border-radius: .375rem;
+                text-decoration: none;
+
+                svg {
+                    height: 1.5rem;
+                }
+
+                span {
+                    color: #FFF;
+                    font-weight: 500;
+                }
+
+                &:first-child {
+                    background-color: rgb(59 130 246);
+                }
+
+                &:nth-child(2) {
+                    background-color: #F97316;
+                }
+
+                &:last-child {
+                    background-color: #1E3A8A;
+                }
+            }
+        }
+    }
+}
