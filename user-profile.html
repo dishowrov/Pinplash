@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinplash</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css"
+        integrity="sha512-i1b/nzkVo97VN5WbEtaPebBG8REvjWeqNclJ6AItj7msdVcaveKrlIIByDpvjk5nwHjXkIqGZscVxOrTb9tsMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main StyleSheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Student Login active header section - started -->
+    <div class="login-active-header">
+        <div class="login-active-header-menu header-menu">
+            <ul>
+                <li>
+                    <a href="/">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">Edit Profile</a>
+                </li>
+
+                <li>
+                    <a href="#">Change Password</a>
+                </li>
+
+                <li>
+                    <a href="#">Passbook</a>
+                </li>
+
+                <li>
+                    <a href="#">Withdrawal</a>
+                </li>
+            </ul>
+
+            <button>
+                <a href="/auth.html" class="logout-btn">Log Out</a>
+            </button>
+        </div>
+
+        <!-- Mobile menu controlling -->
+        <div class="header-mobile-menu">
+            <button class="open-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <button class="close-menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+    <!-- Student Login active header section - ended -->
+
+    <!-- Student login profile section - started -->
+    <div class="user-profile-top">
+        <div class="user-profile-img">
+            <img src="./images/avater.webp" alt="The Student">
+        </div>
+
+        <div class="user-profile-details">
+            <h3 class="user-profile-name">Sadman Sadik</h3>
+            <h6 id="user-profile-id">2411033103</h6>
+        </div>
+    </div>
+
+    <div class="user-profile-table">
+        <div class="user-profile-table-left">
+            <p>Email</p>
+            <p>Country</p>
+            <p>Language</p>
+            <p>Phone</p>
+            <p>WhatsApp</p>
+            <p>Role</p>
+            <p>Reference</p>
+            <p>Balance</p>
+            <p>Team Leader Id</p>
+            <p>Trainer Id</p>
+            <p>Referral Link</p>
+        </div>
+
+        <div class="user-profile-table-right">
+            <p>sadman2055@gmail.com</p>
+            <p>Bangladesh</p>
+            <p>Bengali</p>
+            <p>01764217551</p>
+            <p>01764217551</p>
+            <p>active</p>
+            <p>2411033085</p>
+            <p>0</p>
+            <p>2411126827</p>
+            <p>2411150924</p>
+            <p class="profle-share-btn">
+                <a href="#">
+                    Share
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M568.482 177.448L424.479 313.433C409.3 327.768 384 317.14 384 295.985v-71.963c-144.575.97-205.566 35.113-164.775 171.353 4.483 14.973-12.846 26.567-25.006 17.33C155.252 383.105 120 326.488 120 269.339c0-143.937 117.599-172.5 264-173.312V24.012c0-21.174 25.317-31.768 40.479-17.448l144.003 135.988c10.02 9.463 10.028 25.425 0 34.896zM384 379.128V448H64V128h50.916a11.99 11.99 0 0 0 8.648-3.693c14.953-15.568 32.237-27.89 51.014-37.676C185.708 80.83 181.584 64 169.033 64H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48v-88.806c0-8.288-8.197-14.066-16.011-11.302a71.83 71.83 0 0 1-34.189 3.377c-7.27-1.046-13.8 4.514-13.8 11.859z">
+                        </path>
+                    </svg>
+                </a>
+            </p>
+        </div>
+    </div>
+    <!-- Student login profile section - ended -->
+
+
+
+
+    <!-- JavaScript here -->
+    <script src="./js/custom.js"></script>
+
+</body>
+
+</html>
