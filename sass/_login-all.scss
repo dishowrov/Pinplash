@@ -23,7 +23,8 @@
                 padding-bottom: 25px;
                 display: grid;
 
-                input, select {
+                input,
+                select {
                     font-size: 1.125rem;
                     line-height: 1.75rem;
                     padding: .5rem .75rem;
@@ -51,6 +52,10 @@
                 -moz-border-radius: 5px;
                 -ms-border-radius: 5px;
                 -o-border-radius: 5px;
+
+                &:hover {
+                    background: linear-gradient(91deg, #31c38e 0%, #3f85f6 100%);
+                }
             }
         }
 
@@ -109,4 +114,3 @@
         }
     }
 }
-
