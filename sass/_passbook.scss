@@ -1,0 +1,156 @@
+.passbook-list {
+    padding: 41px 0;
+    text-align: center;
+
+    h1.passbook-list-title {
+        margin: 0;
+        font-weight: 500;
+        font-size: 30px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    p.passbook-list-info {
+        background-color: #93DDFC;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        padding: .5rem;
+        margin: 0.5rem 0 1rem 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .passbook-list-btns {
+        padding-bottom: 4rem;
+
+        button {
+            cursor: pointer;
+            color: #FFF;
+            text-decoration: none;
+            padding: .85rem 1.75rem;
+            display: inline-block;
+            margin: 0 0.5rem;
+            font-size: .875rem;
+            font-weight: 600;
+            background: linear-gradient(91deg, #31c38e 0%, #3f85f6 100%);
+            border: none;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+
+            &:hover {
+                background: linear-gradient(91deg, #e64790 0%, #c37606 100%);
+            }
+        }
+
+        button.active {
+            background: linear-gradient(91deg, #e64790 0%, #c37606 100%);
+
+            &:hover {
+                background: linear-gradient(91deg, #31c38e 0%, #3f85f6 100%);
+            }
+        }
+
+        #passbook-btn-credit {
+            background: linear-gradient(91deg, #e64790 0%, #c37606 100%);
+
+            &:hover {
+                background: linear-gradient(91deg, #31c38e 0%, #3f85f6 100%);
+            }
+        }
+    }
+
+    .passbook-history-list {
+        max-width: 1025px;
+        margin: auto;
+        padding: 1rem;
+
+        .passbook-history-list-table {
+            border: 1px solid #e5e7eb;
+            overflow-x: auto;
+            text-align: left;
+            color: rgb(75 85 99);
+            font-size: .875rem;
+            line-height: 1.25rem;
+            font-family: 'Poppins', sans-serif;
+            border-radius: .5rem;
+
+            >div {
+                display: grid;
+                grid-template-columns: 4rem repeat(6, 1fr);
+                align-items: center;
+                border-bottom: 1px solid #e5e7eb;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                span {
+                    padding: .625rem;
+
+                    &:last-child {
+                        grid-column: 6 / 8;
+                    }
+                }
+            }
+
+
+            div.passbook-history-list-table-heading {
+                background-color: #F9FAFB;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+
+            div.passbook-history-list-table-data {
+                span {
+                    font-weight: 400;
+                }
+            }
+
+        }
+    }
+
+    #passbook-list-debit {
+        display: none;
+    }
+
+}
+
+@media (max-width: 741px) {
+    .passbook-list {
+
+        h1.passbook-list-title {
+            font-size: 24px;
+        }
+
+        p.passbook-list-info {
+            font-size: 1rem;
+        }
+
+        .passbook-list-btns {
+            padding-bottom: 2rem;
+        }
+
+        .passbook-history-list {
+
+            .passbook-history-list-table {
+
+                >div {
+                    grid-template-columns: 3rem repeat(4, 6rem) 9rem;
+
+                    // span {
+                    //     padding: .625rem;
+    
+                    //     &:last-child {
+                    //         grid-column: 6 / 9;
+                    //     }
+                    // }
+                }
+            }
+
+        }
+    }
+
+}

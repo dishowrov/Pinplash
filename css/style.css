@@ -1085,3 +1085,114 @@ body {
 .change-password button.change-password-save-btn:hover {
   background: linear-gradient(91deg, #e64790 0%, #c37606 100%);
 }
+
+.passbook-list {
+  padding: 41px 0;
+  text-align: center;
+}
+.passbook-list h1.passbook-list-title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+}
+.passbook-list p.passbook-list-info {
+  background-color: #93DDFC;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0 1rem 0;
+  font-family: "Poppins", sans-serif;
+}
+.passbook-list .passbook-list-btns {
+  padding-bottom: 4rem;
+}
+.passbook-list .passbook-list-btns button {
+  cursor: pointer;
+  color: #FFF;
+  text-decoration: none;
+  padding: 0.85rem 1.75rem;
+  display: inline-block;
+  margin: 0 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  background: linear-gradient(91deg, #31c38e 0%, #3f85f6 100%);
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.passbook-list .passbook-list-btns button:hover {
+  background: linear-gradient(91deg, #e64790 0%, #c37606 100%);
+}
+.passbook-list .passbook-list-btns button.active {
+  background: linear-gradient(91deg, #e64790 0%, #c37606 100%);
+}
+.passbook-list .passbook-list-btns button.active:hover {
+  background: linear-gradient(91deg, #31c38e 0%, #3f85f6 100%);
+}
+.passbook-list .passbook-list-btns #passbook-btn-credit {
+  background: linear-gradient(91deg, #e64790 0%, #c37606 100%);
+}
+.passbook-list .passbook-list-btns #passbook-btn-credit:hover {
+  background: linear-gradient(91deg, #31c38e 0%, #3f85f6 100%);
+}
+.passbook-list .passbook-history-list {
+  max-width: 1025px;
+  margin: auto;
+  padding: 1rem;
+}
+.passbook-list .passbook-history-list .passbook-history-list-table {
+  border: 1px solid #e5e7eb;
+  overflow-x: auto;
+  text-align: left;
+  color: rgb(75, 85, 99);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-family: "Poppins", sans-serif;
+  border-radius: 0.5rem;
+}
+.passbook-list .passbook-history-list .passbook-history-list-table > div {
+  display: grid;
+  grid-template-columns: 4rem repeat(6, 1fr);
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+.passbook-list .passbook-history-list .passbook-history-list-table > div:last-child {
+  border-bottom: none;
+}
+.passbook-list .passbook-history-list .passbook-history-list-table > div span {
+  padding: 0.625rem;
+}
+.passbook-list .passbook-history-list .passbook-history-list-table > div span:last-child {
+  grid-column: 6/8;
+}
+.passbook-list .passbook-history-list .passbook-history-list-table div.passbook-history-list-table-heading {
+  background-color: #F9FAFB;
+}
+.passbook-list .passbook-history-list .passbook-history-list-table div.passbook-history-list-table-heading span {
+  font-weight: 700;
+}
+.passbook-list .passbook-history-list .passbook-history-list-table div.passbook-history-list-table-data span {
+  font-weight: 400;
+}
+.passbook-list #passbook-list-debit {
+  display: none;
+}
+
+@media (max-width: 741px) {
+  .passbook-list h1.passbook-list-title {
+    font-size: 24px;
+  }
+  .passbook-list p.passbook-list-info {
+    font-size: 1rem;
+  }
+  .passbook-list .passbook-list-btns {
+    padding-bottom: 2rem;
+  }
+  .passbook-list .passbook-history-list .passbook-history-list-table > div {
+    grid-template-columns: 3rem repeat(4, 6rem) 9rem;
+  }
+}
