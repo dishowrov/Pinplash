@@ -1,29 +1,20 @@
-.signup-area {
-    padding: 1rem;
+.withdrawal-area {
+    padding: 2rem 1rem;
     font-family: "Poppins", sans-serif;
 
-    h1.signup-title {
+    h1.withdrawal-title {
         text-align: center;
-        margin: 0;
+        margin: 0 0 2.5rem 0;
         font-weight: 500;
         line-height: 48px;
         font-size: 30px;
     }
 
-    h3.signup-subtitle {
-        margin: .625rem 0 2.5rem 0;
-        color: rgb(40 187 250);
-        font-size: 1rem;
-        line-height: 1.5rem;
-        text-align: center;
-        font-weight: 400;
-    }
-
-    form.signup-form {
-        max-width: 750px;
+    form.withdrawal-form {
+        max-width: 300px;
         margin: auto;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 1rem;
 
         .form-input {
@@ -43,24 +34,7 @@
             }
         }
 
-        .form-input.password-input {
-            grid-column: 1 / -1;
-        }
-
-        p.form-checkbox {
-            grid-column: 1 / -1;
-            display: flex;
-            gap: 1rem;
-            cursor: pointer;
-
-            input[type="checkbox"] {
-                width: 1.15rem;
-                height: 1.15rem;
-            }
-        }
-
-        input.form-btn {
-            grid-column: 1 / -1;
+        button.form-btn {
             width: 100%;
             color: #FFF;
             cursor: pointer;
@@ -68,7 +42,7 @@
             font-size: .875rem;
             line-height: 1.25rem;
             font-weight: 600;
-            background: linear-gradient(91deg, #e64790 0%, #c37606 100%);
+            background: linear-gradient(91deg, #31c38e 0%, #3f85f6 100%);
             border: none;
             border-radius: 5px;
             -webkit-border-radius: 5px;
@@ -77,43 +51,17 @@
             -o-border-radius: 5px;
 
             &:hover {
-                background: linear-gradient(91deg, #31c38e 0%, #3f85f6 100%);
+                background: linear-gradient(91deg, #e64790 0%, #c37606 100%);
             }
         }
     }
-
-    p.login-btn {
-        text-decoration: none;
-        margin: 1.25rem 0 0 0;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        text-align: center;
-
-        a {
-            color: rgb(40 187 250);
-            text-decoration: none;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
-
 }
 
 @media (max-width: 767px) {
-    .signup-area {
-        h1.signup-title {
+    .withdrawal-area {
+        h1.withdrawal-title {
             line-height: 33px;
             font-size: 25px;
-        }
-
-        form.signup-form {
-            grid-template-columns: 1fr;
-
-            p.form-checkbox {
-                font-size: 13px;
-            }
         }
     }
 }
