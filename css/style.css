@@ -782,6 +782,32 @@ body {
   display: none;
 }
 
+@media (max-width: 991.1px) {
+  .login-active-header {
+    padding: 1.5rem 2rem;
+    position: relative;
+  }
+  .login-active-header .header-menu {
+    display: none;
+    background-color: #000;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    height: auto;
+  }
+  .login-active-header .header-menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    padding: 15px;
+    gap: 1.5rem;
+    padding: 3rem 2.5rem 0 2.5rem;
+  }
+  .login-active-header .header-menu button {
+    padding: 2.5rem 2.5rem 3rem 2.5rem;
+  }
+}
 .login-active-info {
   font-family: "Poppins", sans-serif;
 }
@@ -856,33 +882,48 @@ body {
 .login-active-info .login-active-dashboard-boxes .login-active-single-box .box-inner a {
   margin: 0;
 }
-
-@media (max-width: 991.1px) {
-  .login-active-header {
-    padding: 1.5rem 2rem;
-    position: relative;
-  }
-  .login-active-header .header-menu {
-    display: none;
-    background-color: #000;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%;
-    height: auto;
-  }
-  .login-active-header .header-menu ul {
-    flex-direction: column;
-    align-items: flex-start;
-    height: 100%;
-    padding: 15px;
-    gap: 1.5rem;
-    padding: 3rem 2.5rem 0 2.5rem;
-  }
-  .login-active-header .header-menu button {
-    padding: 2.5rem 2.5rem 3rem 2.5rem;
-  }
+.login-active-info .login-active-dashboard-classes {
+  max-width: 42rem;
+  margin: auto;
+  padding: 0 1rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
 }
+.login-active-info .login-active-dashboard-classes .login-active-class {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  background-color: rgb(226, 232, 240);
+  text-align: center;
+}
+.login-active-info .login-active-dashboard-classes .login-active-class img {
+  width: 2rem;
+}
+.login-active-info .login-active-dashboard-classes .login-active-class h4 {
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0.5rem 0 1rem 0;
+}
+.login-active-info .login-active-dashboard-classes .login-active-class a {
+  color: #FFF;
+  text-decoration: none;
+  padding: 0.75rem 1.75rem;
+  display: inline-block;
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  background: linear-gradient(91deg, #31c38e 0%, #3f85f6 100%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.login-active-info .login-active-dashboard-classes .login-active-class a:hover {
+  background: linear-gradient(91deg, #e64790 0%, #c37606 100%);
+}
+
 @media (max-width: 767.99px) {
   .login-active-info h1.login-active-title {
     font-size: 24px;
@@ -897,6 +938,11 @@ body {
   }
   .login-active-info .login-active-dashboard-boxes .box-inner h6 {
     font-size: 14px !important;
+  }
+  .login-active-info .login-active-dashboard-classes {
+    max-width: 333px;
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
 .ref-list {

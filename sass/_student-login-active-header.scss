@@ -1,0 +1,112 @@
+.login-active-header {
+    background-color: #28BBFA;
+    padding: 2rem;
+
+    .login-active-header-menu {
+        max-width: 1281px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+
+        ul {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            gap: .75rem;
+
+            li {
+                padding: 0;
+                list-style-type: none;
+
+                a {
+                    text-decoration: none;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    color: #FFF;
+                }
+            }
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+
+            a {
+                color: #FFF;
+                text-decoration: none;
+                padding: .95rem 1.75rem;
+                font-size: .875rem;
+                line-height: 1.25rem;
+                font-weight: 600;
+                background: linear-gradient(91deg, #e64790 0%, #c37606 100%);
+                border: none;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+
+                &:hover {
+                    background: linear-gradient(91deg, #31c38e 0%, #3f85f6 100%);
+                }
+            }
+        }
+    }
+
+    .header-mobile-menu {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 100%;
+
+        button {
+            padding: 5px;
+            border: none;
+            background-color: transparent;
+
+            i {
+                color: #FFF;
+                font-size: 1.5rem;
+            }
+        }
+
+        button.close-menu {
+            display: none;
+        }
+
+    }
+}
+
+@media (max-width: 991.1px) {
+    .login-active-header {
+        padding: 1.5rem 2rem;
+        position: relative;
+
+        .header-menu {
+            display: none;
+            background-color: #000;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 100%;
+            height: auto;
+
+            ul {
+                flex-direction: column;
+                align-items: flex-start;
+                height: 100%;
+                padding: 15px;
+                gap: 1.5rem;
+                padding: 3rem 2.5rem 0 2.5rem;
+
+            }
+
+            button {
+                padding: 2.5rem 2.5rem 3rem 2.5rem;
+            }
+        }
+    }
+}
