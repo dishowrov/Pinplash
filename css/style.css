@@ -618,6 +618,10 @@ body {
 }
 .login-page .login-area p.signup-btn a {
   color: rgb(40, 187, 250);
+  text-decoration: none;
+}
+.login-page .login-area p.signup-btn a:hover {
+  text-decoration: underline;
 }
 .login-page .login-area p.back-to-home-btn {
   text-align: center;
@@ -647,6 +651,107 @@ body {
   }
   .student-login-page .student-login-img {
     display: none;
+  }
+}
+.signup-area {
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+.signup-area h1.signup-title {
+  text-align: center;
+  margin: 0;
+  font-weight: 500;
+  line-height: 48px;
+  font-size: 30px;
+}
+.signup-area h3.signup-subtitle {
+  margin: 0.625rem 0 2.5rem 0;
+  color: rgb(40, 187, 250);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+}
+.signup-area form.signup-form {
+  max-width: 750px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.signup-area form.signup-form .form-input {
+  display: grid;
+}
+.signup-area form.signup-form .form-input input,
+.signup-area form.signup-form .form-input select {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgb(40, 187, 250);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.signup-area form.signup-form .form-input.password-input {
+  grid-column: 1/-1;
+}
+.signup-area form.signup-form p.form-checkbox {
+  grid-column: 1/-1;
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+.signup-area form.signup-form p.form-checkbox input[type=checkbox] {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+.signup-area form.signup-form input.form-btn {
+  grid-column: 1/-1;
+  width: 100%;
+  color: #FFF;
+  cursor: pointer;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  background: linear-gradient(91deg, #e64790 0%, #c37606 100%);
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.signup-area form.signup-form input.form-btn:hover {
+  background: linear-gradient(91deg, #31c38e 0%, #3f85f6 100%);
+}
+.signup-area p.login-btn {
+  text-decoration: none;
+  margin: 1.25rem 0 0 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+.signup-area p.login-btn a {
+  color: rgb(40, 187, 250);
+  text-decoration: none;
+}
+.signup-area p.login-btn a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .signup-area h1.signup-title {
+    line-height: 33px;
+    font-size: 25px;
+  }
+  .signup-area form.signup-form {
+    grid-template-columns: 1fr;
+  }
+  .signup-area form.signup-form p.form-checkbox {
+    font-size: 13px;
   }
 }
 .login-active-header {

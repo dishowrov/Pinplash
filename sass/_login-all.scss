@@ -73,6 +73,11 @@
 
             a {
                 color: rgb(40 187 250);
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
 
