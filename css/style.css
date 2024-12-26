@@ -653,29 +653,36 @@ body {
     display: none;
   }
 }
-.withdrawal-area {
+.signup-area {
   padding: 2rem 1rem;
   font-family: "Poppins", sans-serif;
 }
-.withdrawal-area h1.withdrawal-title {
+.signup-area h1.signup-title {
   text-align: center;
-  margin: 0 0 2.5rem 0;
   font-weight: 500;
   line-height: 48px;
   font-size: 30px;
 }
-.withdrawal-area form.withdrawal-form {
-  max-width: 300px;
+.signup-area h3.signup-subtitle {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(40, 187, 250);
+  margin: 0.625rem 0 2rem 0;
+}
+.signup-area form.signup-form {
+  max-width: 700px;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
-.withdrawal-area form.withdrawal-form .form-input {
+.signup-area form.signup-form .form-input {
   display: grid;
 }
-.withdrawal-area form.withdrawal-form .form-input input,
-.withdrawal-area form.withdrawal-form .form-input select {
+.signup-area form.signup-form .form-input input,
+.signup-area form.signup-form .form-input select {
   font-size: 1.125rem;
   line-height: 1.75rem;
   padding: 0.5rem 0.75rem;
@@ -686,7 +693,14 @@ body {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-.withdrawal-area form.withdrawal-form button.form-btn {
+.signup-area form.signup-form .form-input.password-input {
+  grid-column: 1/-1;
+}
+.signup-area form.signup-form .form-checkbox {
+  grid-column: 1/-1;
+}
+.signup-area form.signup-form input.form-btn {
+  grid-column: 1/-1;
   width: 100%;
   color: #FFF;
   cursor: pointer;
@@ -694,22 +708,47 @@ body {
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 600;
-  background: linear-gradient(91deg, #31c38e 0%, #3f85f6 100%);
   border: none;
+  background: linear-gradient(91deg, #e64790 0%, #c37606 100%);
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-.withdrawal-area form.withdrawal-form button.form-btn:hover {
-  background: linear-gradient(91deg, #e64790 0%, #c37606 100%);
+.signup-area form.signup-form input.form-btn:hover {
+  background: linear-gradient(91deg, #31c38e 0%, #3f85f6 100%);
+}
+.signup-area p.login-btn {
+  text-align: center;
+  margin-top: 1rem;
+}
+.signup-area p.login-btn a {
+  color: rgb(40, 187, 250);
+  text-decoration: none;
+}
+.signup-area p.login-btn a:hover {
+  text-decoration: underline;
 }
 
-@media (max-width: 767px) {
-  .withdrawal-area h1.withdrawal-title {
-    line-height: 33px;
-    font-size: 25px;
+@media (max-width: 767.1px) {
+  .signup-area h1.signup-title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .signup-area h3.signup-subtitle {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .signup-area form.signup-form {
+    grid-template-columns: 1fr;
+  }
+  .signup-area form.signup-form .form-checkbox label {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .signup-area p.login-btn {
+    font-size: 15px;
   }
 }
 .login-active-header {
@@ -1303,5 +1342,64 @@ body {
   }
   .passbook-list .passbook-history-list .passbook-history-list-table > div {
     grid-template-columns: 3rem repeat(4, 6rem) 9rem;
+  }
+}
+.withdrawal-area {
+  padding: 2rem 1rem;
+  font-family: "Poppins", sans-serif;
+}
+.withdrawal-area h1.withdrawal-title {
+  text-align: center;
+  margin: 0 0 2.5rem 0;
+  font-weight: 500;
+  line-height: 48px;
+  font-size: 30px;
+}
+.withdrawal-area form.withdrawal-form {
+  max-width: 300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.withdrawal-area form.withdrawal-form .form-input {
+  display: grid;
+}
+.withdrawal-area form.withdrawal-form .form-input input,
+.withdrawal-area form.withdrawal-form .form-input select {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgb(40, 187, 250);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.withdrawal-area form.withdrawal-form button.form-btn {
+  width: 100%;
+  color: #FFF;
+  cursor: pointer;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  background: linear-gradient(91deg, #31c38e 0%, #3f85f6 100%);
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.withdrawal-area form.withdrawal-form button.form-btn:hover {
+  background: linear-gradient(91deg, #e64790 0%, #c37606 100%);
+}
+
+@media (max-width: 767px) {
+  .withdrawal-area h1.withdrawal-title {
+    line-height: 33px;
+    font-size: 25px;
   }
 }
