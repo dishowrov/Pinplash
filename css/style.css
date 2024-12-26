@@ -743,9 +743,17 @@ body {
   .signup-area form.signup-form {
     grid-template-columns: 1fr;
   }
+  .signup-area form.signup-form .form-input input,
+  .signup-area form.signup-form .form-input select {
+    font-size: 0.95rem;
+    line-height: normal;
+  }
   .signup-area form.signup-form .form-checkbox label {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+  .signup-area form.signup-form input.form-btn {
+    padding: 0.55rem;
   }
   .signup-area p.login-btn {
     font-size: 15px;
