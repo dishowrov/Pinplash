@@ -1578,7 +1578,7 @@ body {
 }
 .trainer-list .trainer-history-list .trainer-history-list-table > div {
   display: grid;
-  grid-template-columns: 4rem repeat(6, 1fr);
+  grid-template-columns: 4rem repeat(5, 1fr);
   align-items: center;
   border-bottom: 1px solid #e5e7eb;
 }
@@ -1588,9 +1588,6 @@ body {
 .trainer-list .trainer-history-list .trainer-history-list-table > div span {
   padding: 0.625rem;
 }
-.trainer-list .trainer-history-list .trainer-history-list-table > div span:last-child {
-  grid-column: 6/8;
-}
 .trainer-list .trainer-history-list .trainer-history-list-table div.trainer-history-list-table-heading {
   background-color: #F9FAFB;
 }
@@ -1599,6 +1596,35 @@ body {
 }
 .trainer-list .trainer-history-list .trainer-history-list-table div.trainer-history-list-table-data span {
   font-weight: 400;
+}
+.trainer-list .trainer-history-list .trainer-history-list-table div.trainer-history-list-table-data span button {
+  color: #FFF;
+  text-decoration: none;
+  padding: 0.95rem 1.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  background: linear-gradient(91deg, #31c38e 0%, #3f85f6 100%);
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.trainer-list .trainer-history-list .trainer-history-list-table div.trainer-history-list-table-data span button:hover {
+  background: linear-gradient(91deg, #e64790 0%, #c37606 100%);
+}
+.trainer-list .trainer-history-list .trainer-history-list-table div.trainer-history-list-table-data span i {
+  font-size: 1rem;
+  color: #fff;
+  background-color: #31c38e;
+  height: 1.7rem;
+  width: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
 @media (max-width: 741px) {
@@ -1612,6 +1638,6 @@ body {
     padding-bottom: 2rem;
   }
   .trainer-list .trainer-history-list .trainer-history-list-table > div {
-    grid-template-columns: 3rem repeat(4, 6rem) 9rem;
+    grid-template-columns: 3rem repeat(5, 9rem);
   }
 }
