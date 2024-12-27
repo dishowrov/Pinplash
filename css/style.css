@@ -1515,3 +1515,28 @@ body {
   margin: 0;
   text-align: center;
 }
+
+.reference-details h2.reference-details-title {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: 1rem;
+}
+.reference-details p.ref-details-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.reference-details p.ref-details-count span {
+  background-color: rgba(58, 191, 248, 0.5);
+  border: 2px solid rgb(54, 211, 153);
+  padding: 0.25rem 0.85rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
