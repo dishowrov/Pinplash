@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinplash</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css"
+        integrity="sha512-i1b/nzkVo97VN5WbEtaPebBG8REvjWeqNclJ6AItj7msdVcaveKrlIIByDpvjk5nwHjXkIqGZscVxOrTb9tsMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main StyleSheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Trainer  active header section - started -->
+    <div class="login-active-header">
+        <div class="login-active-header-menu header-menu">
+            <ul>
+                <li>
+                    <a href="/">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">Edit Profile</a>
+                </li>
+
+                <li>
+                    <a href="#">Change Password</a>
+                </li>
+            </ul>
+
+            <button>
+                <a href="/auth.html" class="logout-btn">Log Out</a>
+            </button>
+        </div>
+
+        <!-- Mobile menu controlling -->
+        <div class="header-mobile-menu">
+            <button class="open-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <button class="close-menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+    <!--  Trainer active header section - ended -->
+
+    <!-- Trainer profile section - started -->
+    <div class="user-profile-top">
+        <div class="user-profile-img">
+            <img src="./images/avater.webp" alt="The Student">
+        </div>
+
+        <div class="user-profile-details">
+            <h3 class="user-profile-name">Tahmid Hasan</h3>
+            <h6 id="user-profile-id">2411150924</h6>
+        </div>
+    </div>
+
+    <div class="user-profile-table">
+        <div class="user-profile-table-left">
+            <p>Email</p>
+            <p>Country</p>
+            <p>Language</p>
+            <p>Phone</p>
+            <p>WhatsApp</p>
+            <p>Role</p>
+            <p>Reference</p>
+            <p>Balance</p>
+        </div>
+
+        <div class="user-profile-table-right">
+            <p>tahmid509@gmail.com</p>
+            <p>Bangladesh</p>
+            <p>English</p>
+            <p>01764217551</p>
+            <p>01764217551</p>
+            <p>Trainer</p>
+            <p>2411033103</p>
+            <p>100</p>
+        </div>
+    </div>
+    <!-- Trainer profile section - ended -->
+
+
+
+
+    <!-- JavaScript here -->
+    <script src="./js/custom.js"></script>
+
+</body>
+
+</html>
