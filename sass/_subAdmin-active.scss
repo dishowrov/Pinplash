@@ -1,0 +1,118 @@
+.subadmin-area {
+    padding: 41px 0;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+
+    h1.subadmin-title {
+        margin: 0;
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    .new-user-add {
+        padding: 2rem 1rem;
+        
+        h5 {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1.25rem;
+            padding: 0 1rem;
+
+            input {
+                box-sizing: border-box;
+                border: 1px solid rgb(40 187 250);
+                padding: .5rem;
+                font-size: 16px;
+                border-radius: .375rem;
+                cursor: pointer;
+            }
+
+            button {
+                cursor: pointer;
+                color: #FFF;
+                padding: .6rem 1.75rem;
+                font-size: .875rem;
+                line-height: 1.25rem;
+                font-weight: 600;
+                background: linear-gradient(91deg, #31c38e 0%, #3f85f6 100%);
+                border: none;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+
+                &:hover {
+                    background: linear-gradient(91deg, #e64790 0%, #c37606 100%);
+                }
+            }
+        }
+    }
+
+    .user-search {
+        padding: 0 1rem;
+
+        h5 {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1.25rem;
+            padding: 0 1rem;
+
+            input {
+                box-sizing: border-box;
+                border: 1px solid rgb(40 187 250);
+                padding: .5rem;
+                font-size: 16px;
+                border-radius: .375rem;
+                cursor: pointer;
+            }
+
+            button {
+                cursor: pointer;
+                color: #FFF;
+                padding: .6rem 1.75rem;
+                font-size: .875rem;
+                line-height: 1.25rem;
+                font-weight: 600;
+                background: linear-gradient(91deg, #31c38e 0%, #3f85f6 100%);
+                border: none;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+
+                &:hover {
+                    background: linear-gradient(91deg, #e64790 0%, #c37606 100%);
+                }
+            }
+        }
+    }
+}
+
+.student-list {
+    padding: 2rem 1rem;
+
+    h2.student-list-title {
+        font-size: 24px;
+        font-weight: 500;
+        margin: 0;
+        text-align: center;
+    }
+}
