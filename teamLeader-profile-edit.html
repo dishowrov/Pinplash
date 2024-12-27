@@ -36,32 +36,14 @@
             <ul>
                 <li>
                     <a href="/">
-                        <i class="fa-solid fa-house"></i>
+                        <i class="fa-solid fa-arrow-left"></i>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#">Profile</a>
-                </li>
-
-                <li>
-                    <a href="#">Inactive</a>
-                </li>
-
-                <li>
-                    <a href="#">Trainer</a>
-                </li>
-
-                <li>
-                    <a href="#">Count</a>
-                </li>
-
-                <li>
-                    <a href="#">Passbook</a>
-                </li>
-
-                <li>
-                    <a href="#">Withdrawal</a>
+                    <a href="/">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
                 </li>
             </ul>
 
@@ -83,42 +65,27 @@
     </div>
     <!-- Team Leader Login active header section - ended -->
 
+    <!-- Team Leader login edit profile section - started -->
+    <div class="edit-profile">
+        <h1 class="edit-profile-title">Edit Profile</h1>
 
-    <!-- Team Leader Login active reference list info section - started -->
-    <div class="subadmin-area">
-        <h1 class="subadmin-title">Welcome to pinplash</h1>
-
-        <div class="new-user-add">
-            <h5>Request New Active User</h5>
-
-            <form action="">
-                <input type="text" name="" id="">
-
-                <button type="button">Request</button>
-            </form>
+        <div class="edit-profile-img-upload">
+            <label for="filePicker">
+                <div>
+                    <img src="./images/uploadImg.webp" alt="Upload Your New Image">
+                    Change Photo
+                </div>
+                <input id="filePicker" accept="image/*" hidden="" type="file" name="filePicker">
+            </label>
         </div>
 
-        <div class="user-search">
-            <h5>Search by Date , Month Or User Id!</h5>
-
-            <form action="">
-                <input type="month" name="" id="">
-
-                <input type="date" name="" id="">
-
-                <input type="text" name="" id="" placeholder="User Id">
-
-                <button type="button">Search</button>
-            </form>
-        </div>
+        <button class="edit-profile-save-btn">
+            Update Profile
+        </button>
     </div>
-    <!-- Team Leader Login active reference list info section - ended -->
+    <!-- Team Leader login edit profile section - ended -->
 
-    <!-- Student List section - started -->
-    <div class="student-list">
-        <h2 class="student-list-title">Student List (Active User)</h2>
-    </div>
-    <!-- Student List section - ended -->
+
 
 
     <!-- JavaScript here -->

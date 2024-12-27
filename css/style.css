@@ -1540,3 +1540,78 @@ body {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+
+.trainer-list {
+  padding: 41px 0;
+  text-align: center;
+}
+.trainer-list h1.trainer-list-title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+}
+.trainer-list p.trainer-list-subtitle {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0 1rem 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 36px;
+  font-size: 24px;
+}
+.trainer-list .trainer-history-list {
+  max-width: 1025px;
+  margin: auto;
+  padding: 1rem;
+}
+.trainer-list .trainer-history-list .trainer-history-list-table {
+  border: 1px solid #e5e7eb;
+  overflow-x: auto;
+  text-align: left;
+  color: rgb(75, 85, 99);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-family: "Poppins", sans-serif;
+  border-radius: 0.5rem;
+}
+.trainer-list .trainer-history-list .trainer-history-list-table > div {
+  display: grid;
+  grid-template-columns: 4rem repeat(6, 1fr);
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+.trainer-list .trainer-history-list .trainer-history-list-table > div:last-child {
+  border-bottom: none;
+}
+.trainer-list .trainer-history-list .trainer-history-list-table > div span {
+  padding: 0.625rem;
+}
+.trainer-list .trainer-history-list .trainer-history-list-table > div span:last-child {
+  grid-column: 6/8;
+}
+.trainer-list .trainer-history-list .trainer-history-list-table div.trainer-history-list-table-heading {
+  background-color: #F9FAFB;
+}
+.trainer-list .trainer-history-list .trainer-history-list-table div.trainer-history-list-table-heading span {
+  font-weight: 700;
+}
+.trainer-list .trainer-history-list .trainer-history-list-table div.trainer-history-list-table-data span {
+  font-weight: 400;
+}
+
+@media (max-width: 741px) {
+  .trainer-list h1.trainer-list-title {
+    font-size: 24px;
+  }
+  .trainer-list p.trainer-list-info {
+    font-size: 1rem;
+  }
+  .trainer-list .trainer-list-btns {
+    padding-bottom: 2rem;
+  }
+  .trainer-list .trainer-history-list .trainer-history-list-table > div {
+    grid-template-columns: 3rem repeat(4, 6rem) 9rem;
+  }
+}

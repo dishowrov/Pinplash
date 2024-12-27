@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinplash</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css"
+        integrity="sha512-i1b/nzkVo97VN5WbEtaPebBG8REvjWeqNclJ6AItj7msdVcaveKrlIIByDpvjk5nwHjXkIqGZscVxOrTb9tsMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main StyleSheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Team Leader Login active header section - started -->
+    <div class="login-active-header">
+        <div class="login-active-header-menu header-menu">
+            <ul>
+                <li>
+                    <a href="/">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <button>
+                <a href="/auth.html" class="logout-btn">Log Out</a>
+            </button>
+        </div>
+
+        <!-- Mobile menu controlling -->
+        <div class="header-mobile-menu">
+            <button class="open-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <button class="close-menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+    <!-- Team Leader Login active header section - ended -->
+
+    <!-- Team Leader Login active trainer list info section - started -->
+    <div class="trainer-list">
+        <h1 class="trainer-list-title">Welcome to Pinplash</h1>
+
+        <p class="trainer-list-subtitle">Trainer List</p>
+
+        <div class="trainer-history-list">
+            <div class="trainer-history-list-table">
+                <div class="trainer-history-list-table-heading">
+                    <span>No</span>
+                    <span>Id</span>
+                    <span>Name</span>
+                    <span>Joining Time</span>
+                    <span>Message</span>
+                    <span>Message Done</span>
+                </div>
+                					
+                <div class="trainer-history-list-table-data">
+                    <span>1</span>
+                    <span>123456</span>
+                    <span>John Doe</span>
+                    <span>12/12/2021 10:00 AM</span>
+                    <span><button>Message</button></span>
+                    <span><i class="fa-solid fa-check"></i></span>
+                </div>
+                
+                <div class="trainer-history-list-table-data">
+                    <span>2</span>
+                    <span>654321</span>
+                    <span>Jane Smith</span>
+                    <span>13/12/2021 11:00 AM</span>
+                    <span><button>Message</button></span>
+                    <span><i class="fa-solid fa-times"></i></span>
+                </div>
+                
+                <div class="trainer-history-list-table-data">
+                    <span>3</span>
+                    <span>789012</span>
+                    <span>Michael Brown</span>
+                    <span>14/12/2021 12:00 PM</span>
+                    <span><button>Message</button></span>
+                    <span><i class="fa-solid fa-check"></i></span>
+                </div>
+                
+                <div class="trainer-history-list-table-data">
+                    <span>4</span>
+                    <span>345678</span>
+                    <span>Emily Davis</span>
+                    <span>15/12/2021 01:00 PM</span>
+                    <span><button>Message</button></span>
+                    <span><i class="fa-solid fa-times"></i></span>
+                </div>
+                
+                <div class="trainer-history-list-table-data">
+                    <span>5</span>
+                    <span>987654</span>
+                    <span>Alice Johnson</span>
+                    <span>16/12/2021 02:00 PM</span>
+                    <span><button>Message</button></span>
+                    <span><i class="fa-solid fa-check"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team Leader Login active trainer list info section - ended -->
+
+
+
+
+    <!-- JavaScript here -->
+    <script src="./js/custom.js"></script>
+
+</body>
+
+</html>
